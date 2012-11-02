@@ -1,3 +1,9 @@
+defmodule Mix.Tasks.Compile.Sundown do
+  def run(_) do
+    Mix.shell.info System.cmd("make share/markdown.so")
+  end
+end
+
 defmodule Exmarkdown.Mixfile do
   use Mix.Project
 
